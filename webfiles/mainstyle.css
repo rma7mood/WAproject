@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+#bgcontainer {
+	width: 100%;
+	background-color: rgba(26,26,26,1.00);
+}
+
 .container {
 	max-width: 1080px;
 	margin: 0 auto;
