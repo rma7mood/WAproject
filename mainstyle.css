@@ -428,3 +428,8 @@ margin:  0 0 50 0;
 	margin-right: 60px;
 	margin-top: 10px;
 }
+#copyright p {
+	text-align: center;
+	font-size: 12px;
+	font-family: candara;
+}
