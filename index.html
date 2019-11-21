@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cutting Edge Project</title>
+<title>Home | Cutting Edge Project</title>
 <link href="mainstyle.css" rel="stylesheet" type="text/css">
 
-<script src="jquery-3.4.1.js"></script>
-<script src="parallax.min.js"></script>
-<script type="text/javascript" src="date_time.js"></script>
+<script src="scripts/jquery-3.4.1.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script type="text/javascript" src="scripts/date_time.js"></script>
 <script type="text/javascript">
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
@@ -25,10 +25,10 @@ function MM_preloadImages() { //v3.0
 	
 <body onLoad="MM_preloadImages('img/header/enrollimg.jpg','img/header/lobc.jpg','img/scroller/img1.jpg','img/scroller/img2.jpg','img/scroller/img3.jpg')">
 <div id="bgcontainer">
-	<div class="container">
+	<div id="container">
 		<div id="toplogo">
-		  <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="img/header/lobc.jpg">
-				<img class="images" src="img/logo/logo.png" height="250">
+		  <div id="parallax" data-parallax="scroll" data-z-index="1" data-image-src="img/header/lobc.jpg">
+				<img id="images" src="img/logo/logo.png" height="250">
 				<h1> Cutting Edge</h1>
 				<h3> Cooking School</h3>
 				
@@ -36,8 +36,8 @@ function MM_preloadImages() { //v3.0
 		</div>
 		<div id="menubar">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Courses</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="courses.html">Courses</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact</a></li>
 			<li> <p><span id="date_time"></span>
@@ -121,8 +121,8 @@ function MM_preloadImages() { //v3.0
 		<div id="footmenu">
 			<ul>
 				<li><p>Menu</p></li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Courses</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cources.html">Courses</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
