@@ -59,6 +59,12 @@ margin: 0px;
 	
 }
 
+#menubar p {
+	margin: 0;
+	font-size: 11px;
+	text-align: center;
+}
+
 #menubar ul {
 	margin: 0px;
 	padding: 0px;
@@ -177,12 +183,11 @@ margin: 0px;
 	text-align: center;
 }
 
-#enroll h1{
+#enroll h2{
     margin:  0px 50px;
 	text-align: center;
 	position: relative;
-	color: darkred
-		;
+	color: darkred;
 	font-family: candara;
 	font-style: bold;
 	z-index: 2;
@@ -226,7 +231,10 @@ margin:  0 0 50 0;
 
 #content {
 	clear: both;
-
+	width: 100%;
+	height: 600px;
+	font-family: candara;
+	color: black;
 }
 
 #content h2 {
@@ -234,6 +242,99 @@ margin:  0 0 50 0;
 	padding-top: 20;
 	font-family: candara;
 	font:bold;
+	}
+#class1 {
+	width: 30%;
+	height: 100%;
+	background-color: rgba(199,199,199,1.00);
+	margin: 5;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#class2 {
+	width: 30%;
+	height: 100%;
+	background-color: rgba(199,199,199,1.00);
+	margin: 5;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#class3 {
+	width: 30%;
+	height: 100%;
+	background-color: rgba(199,199,199,1.00);
+	margin: 5;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#content div {
+	margin: 10px 1.66667%;
+}
+
+#content div:first-child {
+	margin-left: 0;
+}
+
+#content div:last-child {
+	margin-right: 0;
+}
+
+#content h4 {
+	text-align: center;
+	font: bolder;
+}
+
+#content div:hover {
+	background-color: rgba(158,0,3,1.00);
+	color: white;
+	transform: scale(1.02);
+	transition: all 500ms ease-in-out;
+}
+
+#content a:hover {
+	color: white;
+	transition: all 500ms ease-in-out;
+}
+
+#class1 img {
+	margin: 50px 5% 15px 5%;
+	width: 90%;
+	border-radius: 10px;
+	height: 30%;
+} 
+
+#class2 img {
+	margin: 50px 5% 15px 5%;
+	width: 90%;
+	border-radius: 10px;
+	height: 30%;
+} 
+
+#class3 img {
+	margin: 50px 5% 15px 5%;
+	width: 90%;
+	height: 30%;
+	border-radius: 10px;
+} 
+#content p {
+	text-align: center;
+	font-size: 17px;
 	
+	padding: 0 13px;
 	
+}
+
+#content a {
+	text-decoration: none;
+	color: black;
+}
+
+#footer{
+	clear:both;
 }

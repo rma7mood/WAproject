@@ -6,9 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cutting Edge Project</title>
 <link href="webfiles/mainstyle.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+
 <script src="webfiles/jquery-3.4.1.js"></script>
 <script src="webfiles/parallax.min.js"></script>
+<script type="text/javascript" src="date_time.js"></script>
 <script type="text/javascript">
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
@@ -26,7 +27,7 @@ function MM_preloadImages() { //v3.0
 <div id="bgcontainer">
 	<div class="container">
 		<div id="toplogo">
-		  <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src='webfiles/img/header/lobc.jpg'>
+		  <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="webfiles/img/header/lobc.jpg">
 				<img class="images" src="webfiles/img/logo/logo.png" height="250">
 				<h1> Cutting Edge</h1>
 				<h3> Cooking School</h3>
@@ -39,7 +40,9 @@ function MM_preloadImages() { //v3.0
 			<li><a href="#">Courses</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact</a></li>
-			<li></li>
+			<li> <p><span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script></p>			
+			</li>
 			<li>
 			  <table width="100%" border="0">
   <tbody>
@@ -59,7 +62,7 @@ function MM_preloadImages() { //v3.0
 	  <h6>Hover over the images to give them life! (Click to see the full image)</h6>
 	  <div id="scrollbox">
 		  
-	  <div id="imgscroll"> <a href="#"><img src="webfiles/img/scroller/img1.jpg" width=1000px; onClick="MM_openBrWindow('webfiles/img/scroller/img1.jpg','','width=1400,height=932')"></a>
+	  <div id="imgscroll"> <a href="#"><img src="webfiles/img/scroller/img1.jpg" width="1000px"; onClick="MM_openBrWindow('webfiles/img/scroller/img1.jpg','','width=1400,height=932')"></a>
 		  <a href="#"><img src="webfiles/img/scroller/img2.jpg" width=1000px; onClick="MM_openBrWindow('webfiles/img/scroller/img2.jpg','','width=1400,height=932')"></a>
 		  <a href="#" onClick="window.open('webfiles/img/scroller/img3.jpg')"><img src="webfiles/img/scroller/img3.jpg" width=1000px; onClick="MM_openBrWindow('webfiles/img/scroller/img3.jpg','','width=1400,height=932')"></a>
 		  </div>
@@ -67,14 +70,46 @@ function MM_preloadImages() { //v3.0
 	</div>
 	<div id="enroll">
 	<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src='webfiles/img/header/enrollimg.jpg'>
-		<h1>NOTHING BRINGS PEOPLE TOGETHER LIKE GOOD FOOD.</h1>
+		<h2>NOTHING BRINGS PEOPLE TOGETHER LIKE GOOD FOOD.</h2>
 		<h4>Enroll now! be the best chef ever.</h4> <br>
 	  <a href="#" title="enroll now button" class="enrollbtn">ENROLL NOW</a>
     </div>
 	</div>	
 		<div id="content">
 			<br>
-		<h2> Our Cooking Classes</h3>
+		<h2> Our Cooking Classes</h2>
+			
+			<div id="class1"><a href="#">
+				<img src="webfiles/img/content/class1.jpg">
+				<br>
+				<h4> Korean Dinner | Family Night </h4>
+				<p>Dive in an unforgettable experience for the whole family, learn the best Korean dinner dishes. Let us introduce you to food that looks like art and tastes exquisite!</p>
+				<br>
+				<h4>More Info...</h4>
+				</a>	 </div>
+			
+			
+			<div id="class2"><a href="#">
+				<img src="webfiles/img/content/class2.jpg">
+				<br>
+				<h4> Sweet Kunafa | Kids Class </h4>
+				<p>Let us teach your kids the proper way to handle the arabian beuty "Kunafa", a dessert that combines sweetness; soft but crunchy texture. Whats better than having your kids cook you a "Kunafa" whenever you wanted!</p>
+				<br>
+				<h4>More Info...</h4>
+					 </a></div>
+			
+			
+		
+			<div id="class3">
+				<a href="#">
+				<img src="webfiles/img/content/class3.jpeg">
+				<br>
+				<h4> Indian Dishes </h4>
+				<p>From the land of spices and flavor india, we provide you with the best classes to learn how to create the best Indian dishes full of mouth watering flavor.</p>
+				<br>
+				<h4>More Info...</h4>
+					</a>
+					 </div>
 			
 		</div>
 		
