@@ -34,6 +34,13 @@
 	
 }
 
+hr {
+	height: 3px;
+	background-color: rgba(79,0,1,1.00);
+	width: 95%;
+	border-radius: 3px;
+}
+
 #toplogo h1{
 margin:  0px;
 	text-align: center;
@@ -168,8 +175,7 @@ margin: 0px;
   
 }
 
-#header h6
-{
+#header h6 {
 	text-align: center;
 	margin: 5px;
 	font-family: candara;
@@ -235,6 +241,7 @@ margin:  0 0 50 0;
 	height: 600px;
 	font-family: candara;
 	color: black;
+	
 }
 
 #content h2 {
@@ -247,7 +254,7 @@ margin:  0 0 50 0;
 	width: 30%;
 	height: 100%;
 	background-color: rgba(199,199,199,1.00);
-	margin: 5;
+	margin: 10px;
 	float: left;
 	border-radius: 10px;
 	overflow: hidden;
@@ -257,7 +264,7 @@ margin:  0 0 50 0;
 	width: 30%;
 	height: 100%;
 	background-color: rgba(199,199,199,1.00);
-	margin: 5;
+	margin: 10px;
 	float: left;
 	border-radius: 10px;
 	overflow: hidden;
@@ -267,7 +274,7 @@ margin:  0 0 50 0;
 	width: 30%;
 	height: 100%;
 	background-color: rgba(199,199,199,1.00);
-	margin: 5;
+	margin: 10px;
 	float: left;
 	border-radius: 10px;
 	overflow: hidden;
@@ -275,6 +282,7 @@ margin:  0 0 50 0;
 
 #content div {
 	margin: 10px 1.66667%;
+	transition: all 500ms ease-in-out;
 }
 
 #content div:first-child {
@@ -288,13 +296,14 @@ margin:  0 0 50 0;
 #content h4 {
 	text-align: center;
 	font: bolder;
+	margin-bottom: 10px;
 }
 
 #content div:hover {
 	background-color: rgba(158,0,3,1.00);
 	color: white;
 	transform: scale(1.02);
-	transition: all 500ms ease-in-out;
+	
 }
 
 #content a:hover {
@@ -333,8 +342,89 @@ margin:  0 0 50 0;
 #content a {
 	text-decoration: none;
 	color: black;
+	transition: all 300ms ease-in-out;
 }
 
 #footer{
+	margin: 30px 0;
 	clear:both;
+	width: 100%;
+	height: 250px;
+	background-color: rgba(0,0,0,0.87);
+	padding: 20px 0;
+}
+#spacer {
+	clear:both;
+	margin: 60px auto 0;
+	text-align: center;
+	
+  
+}
+
+#footer hr{
+	width: 1px;
+	height: 90%;
+	background-color: white;
+	margin: 10px;
+	float: left;
+}
+#footmenu ul {
+	list-style: none;
+	color: white;
+	font-family: candara;
+}
+
+#footmenu p {
+	list-style: none;
+	color: white;
+	font-family: candara;
+	font-size: 30px;
+}
+
+#footmenu li {
+	margin: 5px 20px;
+}
+
+#footmenu a {
+	text-decoration: none;
+	color: white;
+	transition: all 300ms ease-in-out;
+}
+
+#footmenu a:hover {
+	color: red;
+}
+
+#footmenu {
+	float: left;
+}
+
+#footercontact {
+	margin: 0px 15px;
+	float: left;
+	
+}
+#footercontact ul {
+	list-style: none;
+	color: white;
+	font-family: candara;
+}
+
+#footercontact a {
+	text-decoration: underline;
+	color: white;
+}
+
+#footercontact h4 {
+	font-family: candara;
+	color:white;
+	font-style: bold;
+	
+}
+
+
+#footermap {
+	float: right;
+	margin-right: 60px;
+	margin-top: 10px;
 }
