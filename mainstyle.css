@@ -16,12 +16,12 @@
 	color:white;
 }
 
-#parallax {
+.parallax {
     padding: 100px	5px;
     background: transparent;
 }
 
-#images {
+.images {
 	padding-right: 25px;
 	z-index: 2;
 	position: relative;
@@ -192,7 +192,7 @@ margin: 0px;
 }
 
 #enroll h2{
-    margin:  0px 50px;
+    margin:  10px 50px;
 	text-align: center;
 	position: relative;
 	color: darkred;
@@ -204,7 +204,7 @@ margin: 0px;
 }
 
 #enroll h4{
-margin:  0 0 50 0;
+margin:  10 0 50 0;
 	text-align: center;
 	position: relative;
 	color: white;
@@ -356,8 +356,7 @@ margin:  0 0 50 0;
 	padding: 20px 0;
 }
 #spacer {
-	clear:both;
-	margin: 60px auto 0;
+    clear: both;
 	text-align: center;
 	
   
@@ -461,6 +460,7 @@ margin:  0 0 50 0;
 
 /* The navigation menu links */
 .sidenav a {
+font-family: candara;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -520,9 +520,100 @@ margin:  0 0 50 0;
 	width: 30px;
 }
 
-#topheader img {
-	float:left;
-	height: 95%;
-	margin-left: 40%;
+#midlogo{
+	width: 90%;
+	float: left;
+	height:100%;
+}
+#midlogo img {
+	height: 90%;
+	margin-left: 45%;
+	border-radius: 20px;
+	background-color: rgba(34,34,34,1.00);
+
+}
+
+#cartlogo {
+	overflow: hidden;
+	border-radius: 10px;
+	margin-top: 5px;
+	width: 5%;
+	float: right;
+}
+
+#cartlogo img {
+	margin: 10px 8px 0 0;
+	height: 50px;
+
+}
+
+#cartlogo a {
+	display: block;
+	transition: all 300ms ease-in-out;
+}
+
+#cartlogo a:hover {
+	background-color: red;
+}
+
+.contentcourses {
+	width: 100%;
+	height: 750px;
+	margin: 30px;
+	color:black;
+
+}
+
+.contentcourses p {
+	font-size: 20px;
+}
+
+.contentcourses img {
+	width: 100%;
+	height: 200px;
+}
+
+.contentcourses a {
+	text-decoration: none;
+	color:black;
+	display: block;
+}
+
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+ max-width: 300px;
+ margin: 10px 2% 0 2%;
+ text-align: center;
+ font-family: candara;
+ color:black;
+ float: left;
+ border-radius: 15px;
+ overflow: hidden;
+ height: auto;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card button:click {
 	
 }

@@ -13,7 +13,7 @@
 <script type="text/javascript" src="scripts/date_time.js"></script>
 
 <script>
-	/* Set the width of the side navigation to 250px */
+/* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -21,19 +21,44 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-} 
-	</script>	
+}
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>	
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('img/content/class1swap.jpg','img/content/class2swap.jpg','img/content/class3swap.jpg')">
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
+  <a href="index.html">Home</a>
+  <a href="courses.html">Courses</a>
+  <a href="about.html">About</a>
   <a href="#">Contact</a>
 </div>
-	<div id="bgcontainer">
+<div id="bgcontainer">
 		<div id="container">
 			<div id="topheader">
 				
@@ -44,18 +69,86 @@ function closeNav() {
 					<div id="nav3"></div>
 				</div>
 				</a>
-			<img src="img/logo/logo.png">
+			<div id="midlogo"><img src="img/logo/logo.png"></div>
 			
+		 <div id="cartlogo"><a href="#"><img src="img/menubar/cart.png"></a></div>
 			</div>
+		<div class="contentcourses">
+			
 		
-	
-		
-	
-	
+
+			<h1>Courses</h1>
+			<h6> The current available courses provided by Cutting Edge Cooking School</h6>
+			
+			<div class="card">
+ 			 <a href="#">
+				<img src="img/content/class1.jpg" alt="Korean Dish" id="Image1" onMouseOver="MM_swapImage('Image1','','img/content/class1swap.jpg',1)" onMouseOut="MM_swapImgRestore()">
+  			<h5>Korean Dinner | Family Class</h5>
+  			<p class="price">$350.00</p>
+  			<p>Dive in an unforgettable experience for the whole family to learn about the best Korean dishes. Let us introduce you to food that looks like art and tastes exquisite!</p>
+				</a>
+		<br>
+  			<p><button onClick="MM_popupMsg('Course Added to your shopping cart!')">Add to Cart</button></p>
+			</div> 
+			
+			<div class="contentcourses">
+			<div class="card">
+ 			 <a href="#">
+				<img src="img/content/class2.jpg" alt="Kunafa Bites" id="Image2" onMouseOver="MM_swapImage('Image2','','img/content/class2swap.jpg',1)" onMouseOut="MM_swapImgRestore()">
+  			<h5>Sweet Kunafa | Kids Class</h5>
+  			<p class="price">$50.00</p>
+  			<p>Let us teach your kids the proper way to handle the arabian beauty "Kunafa", a dessert that combines sweetness; soft but crunchy texture. Whats better than having your kids cook you a "Kunafa" whenever you wanted!</p>
+				</a>
+  			<p><button onClick="MM_popupMsg('Course Added to your shopping cart!')">Add to Cart</button></p>
+			</div> 
+				
+			<div class="contentcourses">
+			<div class="card">
+ 			 <a href="#">
+				<img src="img/content/class3.jpeg" alt="Indian Dish" id="Image3" onMouseOver="MM_swapImage('Image3','','img/content/class3swap.jpg',1)" onMouseOut="MM_swapImgRestore()">
+  			<h5>Indian Dishes | Open Class</h5>
+  			<p class="price">$70.00</p>
+  			<p>From the land of spices and flavor india, we provide you with the best classes to learn how to create the best Indian dishes full of mouth watering flavor.</p>
+				</a>
+			<br>
+  			<p><button onClick="MM_popupMsg('Course Added to your shopping cart!')">Add to Cart</button></p>
+			</div> 
+	 		</div>
 		
 		</div>
-	</div>
-	
+		  </div>
+			<hr>
+		
+		<div id="footer">
+		<div id="footmenu">
+			<ul>
+				<li><p>Menu</p></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cources.html">Courses</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		  </div>
+			<hr>
+		<div id="footercontact">
+			<h4> Contact Details</h4>
+			<ul>
+				<li>17123123</li>
+				<li>Avenue 13</li>
+				<li>Saar, Bahrain</li>
+				<li><a href="mailto:info@cuttingedge.com">info@cuttingedge.com</a></li>
+			</ul>
+		  </div>
+		<div id="footermap">
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=saar%20avenue%2013&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:220px;width:250px;}.gmap_canvas {overflow:hidden;background:none!important;height:220px;width:250px;}</style></div>
+		  </div>
+			
+		</div>
+		
+	<div id="copyright"><p>© 2019, Cutting Edge Cooking School</p>
+	<p>All Rights Reserved</p></div>	
+</div>
+</div>
 	
 </body>
 </html>
