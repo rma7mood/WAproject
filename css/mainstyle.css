@@ -1,0 +1,880 @@
+@charset "utf-8";
+
+#bgcontainer {
+  width: 100%;
+  background-color: rgba(26, 26, 26, 1.00);
+}
+
+#container {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 0 25px;
+  width: 100%;
+  font-family: candara;
+  color: white;
+}
+
+.parallax {
+  padding: 100px 5px;
+  background: transparent;
+}
+
+.images {
+  padding-right: 25px;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
+hr {
+  height: 3px;
+  background-color: rgba(79, 0, 1, 1.00);
+  width: 95%;
+  border-radius: 3px;
+}
+
+#toplogo h1 {
+  margin: 0px;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: candara;
+  font-style: bold;
+  z-index: 2;
+}
+
+#toplogo h3 {
+  margin: 0px;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: candara;
+  z-index: 2;
+}
+
+#menubar {
+  margin: 0;
+  width: 100%;
+}
+
+#menubar p {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+#menubar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#menubar li {
+  color: white;
+  float: left;
+  width: 16.667%;
+  height: 50px;
+  background-color: black;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: candara;
+}
+
+#menubar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+#menubar a:hover {
+  background-color: red;
+}
+
+#menubar table {
+  margin: 0;
+  padding: 0px;
+}
+
+#header {
+  padding: 15px 25px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92.5%;
+}
+
+#scrollbox {
+  width: 1000px;
+  overflow: hidden;
+}
+
+#imgscroll {
+  position: relative;
+  width: 3000px;
+  animation-name: scroller;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#imgscroll img {
+  float: left;
+  webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+@keyframes scroller {
+  0% {
+    left: 0px;
+  }
+
+  27.8% {
+    left: 0px;
+  }
+
+  33.3% {
+    left: -1000px;
+  }
+
+  61.1% {
+    left: -1000px;
+  }
+
+  66.6% {
+    left: -2000px;
+  }
+
+  94.4% {
+    left: -2000px;
+  }
+
+  100% {
+    left: -3000px;
+  }
+}
+
+#imgscroll img:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#header h6 {
+  text-align: center;
+  margin: 5px;
+  font-family: candara;
+  font-style: oblique;
+  color: black;
+}
+
+#enroll {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  float: inherit;
+  text-align: center;
+}
+
+#enroll h2 {
+  margin: 10px 50px;
+  text-align: center;
+  position: relative;
+  color: darkred;
+  font-family: candara;
+  font-style: bold;
+  z-index: 2;
+  background-color: rgba(223, 223, 223, 0.10);
+  border-radius: 10px;
+}
+
+#enroll h4 {
+  margin: 10 0 50 0;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: candara;
+  font-style: bold;
+  z-index: 2;
+}
+
+#enroll a {
+  z-index: 2;
+  position: relative;
+  font-family: candara;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+#enroll a:hover {
+  color: black;
+  background-color: #D7D7D7;
+}
+
+.enrollbtn {
+  margin-top: 40px;
+  text-align: center;
+  background-color: rgba(158, 0, 3, 1.00);
+  border-radius: 10px;
+}
+
+#content {
+  clear: both;
+  width: 100%;
+  height: 600px;
+  font-family: candara;
+  color: black;
+}
+
+#content h2 {
+  text-align: center;
+  padding-top: 20;
+  font-family: candara;
+  font: bold;
+}
+
+#class1 {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(199, 199, 199, 1.00);
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#class2 {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(199, 199, 199, 1.00);
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#class3 {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(199, 199, 199, 1.00);
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#content div {
+  margin: 10px 1.66667%;
+  transition: all 500ms ease-in-out;
+}
+
+#content div:first-child {
+  margin-left: 0;
+}
+
+#content div:last-child {
+  margin-right: 0;
+}
+
+#content h4 {
+  text-align: center;
+  font: bolder;
+  margin-bottom: 10px;
+}
+
+#content div:hover {
+  background-color: rgba(158, 0, 3, 1.00);
+  color: white;
+  transform: scale(1.02);
+}
+
+#content a:hover {
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+
+#class1 img {
+  margin: 50px 5% 15px 5%;
+  width: 90%;
+  border-radius: 10px;
+  height: 30%;
+}
+
+#class2 img {
+  margin: 50px 5% 15px 5%;
+  width: 90%;
+  border-radius: 10px;
+  height: 30%;
+}
+
+#class3 img {
+  margin: 50px 5% 15px 5%;
+  width: 90%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+#content p {
+  text-align: center;
+  font-size: 17px;
+  padding: 0 13px;
+}
+
+#content a {
+  text-decoration: none;
+  color: black;
+  transition: all 300ms ease-in-out;
+}
+
+#footer {
+  margin: 30px 0;
+  clear: both;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 20px 0;
+}
+
+#spacer {
+  clear: both;
+  text-align: center;
+}
+
+#footer hr {
+  width: 1px;
+  height: 90%;
+  background-color: white;
+  margin: 10px;
+  float: left;
+}
+
+#footmenu ul {
+  list-style: none;
+  color: white;
+  font-family: candara;
+}
+
+#footmenu p {
+  list-style: none;
+  color: white;
+  font-family: candara;
+  font-size: 30px;
+}
+
+#footmenu li {
+  margin: 5px 20px;
+}
+
+#footmenu a {
+  text-decoration: none;
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+#footmenu a:hover {
+  color: red;
+}
+
+#footmenu {
+  float: left;
+}
+
+#footercontact {
+  margin: 0px 15px;
+  float: left;
+}
+
+#footercontact ul {
+  list-style: none;
+  color: white;
+  font-family: candara;
+}
+
+#footercontact a {
+  text-decoration: underline;
+  color: white;
+}
+
+#footercontact h4 {
+  font-family: candara;
+  color: white;
+  font-style: bold;
+}
+
+#footermap {
+  float: right;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+#copyright p {
+  text-align: center;
+  font-size: 12px;
+  font-family: candara;
+  color: black;
+  clear: both;
+}
+
+/*-- Courses Page CSS --*/
+#topheader {
+  width: 105%;
+  height: 80px;
+  background-color: rgba(26, 26, 26, 1.00);
+  margin: 0 -25px;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: rgba(34, 34, 34, 1.00);
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-family: candara;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #D40003;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#navmenulogo div {
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 25px;
+  transition: all 300ms ease-in-out;
+}
+
+#topheader a {
+  display: block;
+}
+
+#navmenulogo {
+  padding-top: 15px;
+  width: 30px;
+  display: block;
+  margin: auto 0 auto 1em;
+  float: left;
+}
+
+#nav1 {
+  width: 30px;
+}
+
+#nav2 {
+  width: 20px;
+}
+
+#nav3 {
+  width: 25px;
+}
+
+#navmenulogo:hover div {
+  width: 30px;
+}
+
+#midlogo {
+  width: 90%;
+  float: left;
+  height: 100%;
+}
+
+#midlogo img {
+  height: 90%;
+  margin-left: 45%;
+  border-radius: 20px;
+  background-color: rgba(34, 34, 34, 1.00);
+}
+
+#cartlogo {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 5%;
+  float: right;
+}
+
+#cartlogo img {
+  margin: 10px 8px 0 0;
+  height: 50px;
+}
+
+#cartlogo a {
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+#cartlogo a:hover {
+  background-color: red;
+}
+
+.contentcourses {
+  width: 100%;
+  height: 750px;
+  margin: 30px;
+  color: black;
+}
+
+.contentcourses p {
+  font-size: 20px;
+}
+
+.contentcourses img {
+  width: 100%;
+  height: 200px;
+}
+
+.contentcourses a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: 10px 2% 0 2%;
+  text-align: center;
+  font-family: candara;
+  color: black;
+  float: left;
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card button:click {}
+
+.aboutcontent {
+  width: 100%;
+}
+
+.topabout {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.topabout h1 {
+  color: black;
+  font-family: candara;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.topabout p {
+  margin-top: 60px;
+  color: black;
+  font-family: candara;
+  font-size: 20px;
+  float: left;
+  width: 70%;
+}
+
+.topabout img {
+  float: right;
+  width: 25%;
+  padding: 20px;
+}
+
+.midabout {
+  clear: both;
+  width: 100%;
+}
+
+.aboutcontent hr {
+  margin-top: 15px;
+  height: 0.5px;
+  background-color: lightgrey;
+}
+
+.midabout h1 {
+  color: darkred;
+  font-family: candara;
+  float: left;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.midabout p {
+  color: Black;
+  font-family: candara;
+  float: left;
+  font-size: 20px;
+  width: 50%;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.midabout img {
+  margin-top: 50px;
+  width: 40%;
+  float: left;
+  padding: 20px;
+}
+
+.botabout {
+  clear: both;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.botabout h1 {
+  color: black;
+  text-align: center;
+}
+
+.botabout img {
+  width: 100%;
+}
+
+.botabout p {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.space {
+  clear: both;
+  height: 50px;
+  width: 100%;
+}
+
+.chefscontain {
+  position: relative;
+  width: 100%;
+}
+
+.overlayimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chefsoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #830000;
+}
+
+.chefscontain:hover .chefsoverlay {
+  opacity: 0.7;
+}
+
+.overlaytext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.topmap {
+  width: 100%;
+  color: black;
+}
+
+.infocontact {
+  color: Black;
+  margin-left: 40px;
+  float: left;
+  width: 35%;
+}
+
+.infocontact ul {
+  color: #252525;
+  list-style: none;
+}
+
+.contactform {
+  margin-top: 10px;
+  color: black;
+  padding-left: 40px;
+  padding-right: 0;
+  float: left;
+  width: 55%;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 5px;
+  border-left-style: solid;
+}
+
+.contactform input {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.contactform textarea {
+  margin-left: 30px;
+  width: 80%;
+  height: 300px;
+  resize: none;
+}
+
+.contactform input[type=submit] {
+  width: 20%;
+  height: 50px;
+  color: black;
+  background-color: rgb(156, 156, 156);
+  border-radius: 10px;
+  font-family: candara;
+  font-size: 20px;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.contactform input[type=submit]:hover {
+  color: white;
+  background-color: rgb(89, 0, 0);
+}
+
+.classheading {
+  color: Black;
+  text-align: center;
+  margin: 10px 0 30px 0;
+  padding-bottom: 25px;
+  border-bottom: solid;
+}
+
+.classinfo {
+  width: 45%;
+  float: left;
+  padding-right: 5%;
+}
+
+.classinfo img {
+  display: block;
+  margin: 15px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.classinfo p {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+}
+
+.registerform {
+  color: black;
+  width: 42%;
+  float: left;
+  padding-left: 5%;
+  border-left: solid;
+}
+
+.registerform h1 {
+  color: rgb(87, 0, 0);
+}
+
+.registerform input {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.registerform textarea {
+  margin-left: 30px;
+  width: 80%;
+  height: 300px;
+  resize: none;
+}
+
+.registerform input[type=submit] {
+  width: 40%;
+  height: 50px;
+  color: black;
+  background-color: rgb(156, 156, 156);
+  border-radius: 10px;
+  font-family: candara;
+  font-size: 20px;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.registerform input[type=submit]:hover {
+  color: white;
+  background-color: rgb(89, 0, 0);
+}

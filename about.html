@@ -1,52 +1,183 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses | Cutting Edge Project</title>
-<link href="mainstyle.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Cutting Edge Project</title>
+  <link href="css/mainstyle.css" rel="stylesheet" type="text/css">
 
-<script src="scripts/jquery-3.4.1.js"></script>
-<script src="scripts/parallax.min.js"></script>
-<script type="text/javascript" src="scripts/date_time.js"></script>
-	
-<script>
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+  <script src="scripts/jquery-3.4.1.js"></script>
+  <script src="scripts/parallax.min.js"></script>
+  <script type="text/javascript" src="scripts/date_time.js"></script>
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}</script>
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </head>
 
 <body>
-	<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="courses.html">Courses</a>
-  <a href="about.html">About</a>
-  <a href="#">Contact</a>
-</div>
-<div id="bgcontainer">
-		<div id="container">
-			<div id="topheader">
-				
-				<a href="#" onclick="openNav();return false;">
-				<div id="navmenulogo">
-					<div id="nav1"></div>
-					<div id="nav2"></div>
-					<div id="nav3"></div>
-				</div>
-				</a>
-			<div id="midlogo"><img src="img/logo/logo.png"></div>
-			
-		 <div id="cartlogo"><a href="#"><img src="img/menubar/cart.png"></a></div>
-			</div>
-			
-			
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div id="bgcontainer">
+    <div id="container">
+      <div id="topheader">
+
+        <a href="#" onclick="openNav();return false;">
+          <div id="navmenulogo">
+            <div id="nav1"></div>
+            <div id="nav2"></div>
+            <div id="nav3"></div>
+          </div>
+        </a>
+        <div id="midlogo"><img src="img/logo/logo.png"></div>
+
+        <div id="cartlogo"><a href="#"><img src="img/menubar/cart.png"></a></div>
+      </div>
+
+      <div class="aboutcontent">
+
+        <div class="topabout">
+          <h1>Who are we?</h1>
+          <p> We are a group of professional chefs who dedicated their lives and efforts into teaching the art of cooking.
+            Since 2015 we have been making this world a better place by teaching individuals how to cook great food of all types,
+            we developed a fun interactive classes which combines theoretical learning, practical application and a lot of fun and laughs.
+            Our chefs will provide you with the most fun learning experience you will ever have in your whole life! </p>
+          <img src="img/about/teaching.jpg">
+        </div>
+
+        <div class="midabout">
+          <hr>
+          <img src="img/about/quality.jpg">
+          <h1>We're all about quality!</h1>
+          <p>
+            Our professional foodservice products are developed with the close involvement of our Chefs. So, it’s no surprise that our leading foodservice brands deliver quality without compromise in the kitchen.
+            <br>
+            With our innovative, professional ingredients you can save precious prep time whilst serving delicious food that makes a profit.
+          </p>
+        </div>
+
+        <div class="botabout">
+          <hr>
+          <h1>Meet our chefs!</h1>
+
+          <div class="card">
+            <h5>Lucas Siwinski</h5>
+            <div class="chefscontain">
+              <img src="img/about/Lucas.jpg" class="overlayimg">
+              <div class="chefsoverlay">
+                <div class="overlaytext">"If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music." </div>
+              </div>
+            </div>
+            <p>
+              Lucas Siwinski started out studying pastry, chocolate and ice cream-making here at FERRANDI Paris in 2004 before going on
+              to working in several patisseries around Paris, including Gérard Mulot’s Maison Mulot. He then went to travel the world,
+              first working in several prestigious clubs in Australia, before moving on to South America.
+            </p>
+          </div>
+
+          <div class="card">
+            <h5>Elsa Pierret</h5>
+            <div class="chefscontain">
+              <img src="img/about/elsa.png" class="overlayimg">
+              <div class="chefsoverlay">
+                <div class="overlaytext">"If you want to become a great chef, you have to work with great chefs. And that's exactly what I did." </div>
+              </div>
+            </div>
+            <p>
+              Ambitious, full of ideas for future projects, Elsa Pierret graduated from her Bachelor’s in Management from Texas in 2014.
+              Over the course of the following three years, she undertook her professional internships in smaller institutions such as Le Meurice or the Michelin-starred restaurant Auréole in New Yorks.
+            </p>
+          </div>
+
+          <div class="card">
+            <h5>Stevy Antoine</h5>
+            <div class="chefscontain">
+              <img src="img/about/stevy.jpg" class="overlayimg">
+              <div class="chefsoverlay">
+                <div class="overlaytext">"Anyone who's a chef, who loves food, ultimately knows that all that matters is: 'Is it good? Does it give pleasure?'" </div>
+              </div>
+            </div>
+            <p>
+              For asian dishes Stevy Antoine is the man, it all clicked during an internship in his third year of school with a Korean food chef
+              in Seul. He decided from that moment on, that he would take a course for two
+              years to learn the art of cooking asian food. Never put off by demanding hours, often reaching 10 hours a day. He is ready to teach asian food magic.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="space">
+        <br>
+      </div>
+      <hr>
+      <div id="footer">
+        <div id="footmenu">
+          <ul>
+            <li>
+              <p>Menu</p>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <hr>
+        <div id="footercontact">
+          <h4> Contact Details</h4>
+          <ul>
+            <li>17123123</li>
+            <li>Avenue 13</li>
+            <li>Saar, Bahrain</li>
+            <li><a href="mailto:info@cuttingedge.com">info@cuttingedge.com</a></li>
+          </ul>
+        </div>
+        <div id="footermap">
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="250" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=saar%20avenue%2013&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 220px;
+                width: 250px;
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 220px;
+                width: 250px;
+              }
+            </style>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="copyright">
+        <p>© 2019, <a href="index.html">Cutting Edge Cooking School</a>.</p>
+        <p>All Rights Reserved</p>
+      </div>
+
+    </div>
+  </div>
+
 </body>
+
 </html>
